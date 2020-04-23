@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Varela|Varela+Round&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  width: 90%;
+}
+
+body {
+  background-color: #1f78ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  color: white;
+  overflow-x: hidden;
+}
+
+body header,
+body section {
+  width: 100vw;
+  padding: 0 0 2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2em;
+}
+
+body header #logo,
+body section #logo {
+  width: 35%;
+  margin: 0 !important;
+}
+
+body header h1,
+body section h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  background-position: center;
+  background-size: cover;
+}
+
+body header h2,
+body section h2 {
+  font-size: 1.8rem;
+}
+
+body header h2 span,
+body section h2 span {
+  color: #1f78ff;
+}
+
+body header p,
+body section p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+body header p a,
+body section p a {
+  background-color: #fcbee4;
+  color: #1f78ff;
+  font-weight: bolder;
+  border-bottom: 3px solid #fff;
+  text-decoration: none;
+}
+
+body header {
+  width: 90vw !important;
+  background-color: #fcfcfc;
+  margin: 1em !important;
+  color: #272727 !important;
+  border: 2px solid #272727;
+}
+
+body header #span {
+  font-size: 1.4rem;
+  padding: 0 !important;
+}
+
+body .work {
+  background-color: #0e0e0e;
+  color: #fcbee4 !important;
+  padding-top: 1em;
+  width: 100vw !important;
+}
+
+body .work h2 {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+body .work .werkstuk img {
+  width: 80%;
+}
+
+body .work .werkstuk .button:hover {
+  background-color: #1f78ff;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+body .work .werkstuk .button {
+  background-color: white;
+  color: black;
+  width: 10em;
+  padding: 10px;
+  margin: 1em 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 900;
+  border-radius: 100px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  letter-spacing: 1px;
+}
+
+body .work .work-excerpt {
+  color: white;
+  font-size: 0.8rem;
+}
+
+body .profile,
+body .contact {
+  background-color: #fcfcfc;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 85svw !important;
+  color: #0000e8;
+  margin: 0;
+}
+
+body .profile .about,
+body .contact .about {
+  text-align: center;
+  width: 90%;
+}
+
+body .profile .about img,
+body .contact .about img {
+  width: 8em;
+  border-radius: 100px;
+  margin-top: 2em;
+}
+
+body .profile .about img:hover,
+body .contact .about img:hover {
+  width: 10em;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+body .profile .about h4,
+body .contact .about h4 {
+  font-size: 3rem;
+  padding-top: 0.4em;
+}
+
+body .profile .about span,
+body .contact .about span {
+  font-size: 2.6rem;
+  padding-bottom: 0.8em;
+}
+
+body .profile .about p,
+body .contact .about p {
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 1rem;
+}
+
+body .contact #contact {
+  font-size: 1.3rem;
+  line-height: 2.6rem;
+  width: 80%;
+}
+
+body .contact #contact a {
+  background-color: #ffe0f2;
+  color: #0000e8;
+  padding: 0 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  border-bottom: 4px solid #fcbee4;
+}
+
+body .contact #contact a:hover {
+  background-color: #1f78ff;
+  border-color: #0000e8;
+  color: white;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+body .contact #contact a:active {
+  font-size: 3rem;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+body footer {
+  background-color: black;
+  width: 100vw;
+}
+
+body footer p {
+  text-align: center;
+  margin: 5em 0;
+  padding: 2em 0;
+  color: white;
+}
+
+@media only screen and (min-width: 490px) and (max-width: 800px) {
+  header #logo {
+    width: 6em !important;
+    background-color: #fcfcfc !important;
+  }
+  header h1 {
+    font-size: 4rem !important;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 2em;
+  }
+  header p {
+    font-size: 1rem !important;
+    font-family: "Open Sans", sans-serif;
+  }
+  header #span {
+    font-size: 1.8rem !important;
+  }
+  .work .werkstuk .button {
+    -ms-flex-item-align: center !important;
+        -ms-grid-row-align: center !important;
+        align-self: center !important;
+    margin-left: 0 !important;
+  }
+  .work .title {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  body {
+    background-color: #edf4ff;
+  }
+  header {
+    width: 70vw !important;
+    height: 100%;
+    margin-bottom: 4em !important;
+    color: #0000e8;
+  }
+  header #logo {
+    width: 10em !important;
+    -ms-flex-item-align: start !important;
+        align-self: flex-start !important;
+    margin-left: 2em;
+    background-color: #1f78ff;
+  }
+  header h1 {
+    font-size: 10rem !important;
+    text-shadow: 3px 3px 0 #0000e8 !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    color: #cee1ff !important;
+  }
+  header h2 {
+    font-size: 4rem !important;
+  }
+  header h2 span {
+    color: #0000e8 !important;
+  }
+  header p {
+    font-size: 1.2rem !important;
+    line-height: normal !important;
+  }
+  header #span {
+    font-size: 2.5rem !important;
+    line-height: normal !important;
+  }
+  .about {
+    width: 60vw !important;
+  }
+  .about img:hover {
+    width: 30em;
+  }
+  .work-excerpt {
+    margin-top: 4em;
+    font-size: 1rem !important;
+    width: 60% !important;
+  }
+  .werkstuk {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr auto;
+    grid-gap: 1em;
+        grid-template-areas: "leftup leftup rightup rightup" "centerleft centerleft centerright centerright";
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    justify-items: start;
+    margin: 0 !important;
+  }
+  .werkstuk .title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: rightup;
+    font-size: 6rem !important;
+    -ms-flex-item-align: start !important;
+        -ms-grid-row-align: start !important;
+        align-self: start !important;
+    font-weight: 900;
+  }
+  .werkstuk img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: leftup;
+    width: 34em !important;
+    -ms-grid-column-align: center !important;
+        justify-self: center !important;
+  }
+  .werkstuk p {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: rightup;
+    -ms-flex-item-align: end !important;
+        -ms-grid-row-align: end !important;
+        align-self: end !important;
+    width: 85% !important;
+  }
+  .werkstuk a {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: centerright;
+    -ms-grid-column-align: start !important;
+        justify-self: start !important;
+    -ms-flex-item-align: start !important;
+        -ms-grid-row-align: start !important;
+        align-self: start !important;
+  }
+  .profile,
+  .contact {
+    width: 85vw !important;
+    border-right: 15vw solid #1f78ff;
+  }
+  .contact #contact {
+    width: 60vw !important;
+    padding: 3em 0;
+    font-size: 2.1rem !important;
+    line-height: 2.3 !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
